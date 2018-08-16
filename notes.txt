@@ -1,0 +1,35 @@
+cd Android/Sdk/emulator/
+
+./emulator -avd My_Android
+
+
+react-native run-android
+
+adb devices
+
+adb reverse tcp:8081 tcp:8081 - Using emulator, it will close emulator
+
+Magic tric
+1. kill all your processs
+2npm start --reset-cache
+
+
+sudo lsof -i :8081
+
+cd android & then ./gradlew --status	WHEN STUCK in 98% & restart emulator
+
+
+shaon@linux:~/projects/WeatherApp$ ps aux | grep react-native
+
+http://10.0.2.2:8081/index.delta?platform=android&dev=true&minify=false
+
+
+ast 1536 MB.
+To do this set org.gradle.jvmargs=-Xmx1536M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+
+
+
+fetch('http://food2fork.com/api/search?q=pizza&key=b3c6da6734a4ddaaf2a7f1c9ee78c933')
+
+fetch('http://food2fork.com/api/get?rId=' + recipeId + '&key=b3c6da6734a4ddaaf2a7f1c9ee78c933')
